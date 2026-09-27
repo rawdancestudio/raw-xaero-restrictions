@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "no.rawdance.minecraft.xaerorestrictions.mixin",
+  "client": [
+    "MapWriterMixin",
+    "MapDimensionMixin",
+    "GuiCaveModeOptionsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

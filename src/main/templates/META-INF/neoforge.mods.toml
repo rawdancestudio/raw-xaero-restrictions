@@ -1,0 +1,39 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="RAW Dance Studio"
+displayTest="MATCH_VERSION"
+description='''
+Server-enforced restrictions for Xaero's World Map.
+Locks cave-map behaviour and provides separate surface/cave map writing-distance caps.
+'''
+
+[[mixins]]
+config="raw_xaero_restrictions.mixins.json"
+requiredMods=["xaeroworldmap"]
+
+[[dependencies.${mod_id}]]
+modId="neoforge"
+type="required"
+versionRange="[${neo_version},)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="minecraft"
+type="required"
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="xaeroworldmap"
+type="required"
+versionRange="[1.46.1,1.46.2)"
+ordering="AFTER"
+side="BOTH"
