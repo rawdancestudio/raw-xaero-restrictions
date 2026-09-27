@@ -1,5 +1,7 @@
 # RAW Xaero Restrictions 0.1.0
 
+Server-side restrictions for Xaero’s World Map mod in Minecraft, including locked cave-map behavior and separate surface/cave map-writing limits. Designed for NeoForge servers that want Xaero’s mapping features without the more cheat-like options.
+
 Target:
 - Minecraft 26.2
 - NeoForge 26.2.0.88
